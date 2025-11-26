@@ -1,19 +1,10 @@
 import json
 import os
-import pathlib
 
 from transformers import pipeline
 from pathlib import Path
 
-
-# ---------------- Languge maps ----------------
-LANG_MAP = {
-    "fr.json": {"tgtSrc": "fra_Latn"},
-    "en.json": {"tgtSrc": "eng_Latn"},
-    "de.json": {"tgtSrc": "deu_Latn"},
-    "es.json": {"tgtSrc": "spa_Latn"},
-}
-
+from cli_src.langmap import LANG_MAP
 
 # ---------------- INITIALIZE MODEL ----------------
 translator = pipeline("translation", model="facebook/nllb-200-distilled-600M")
