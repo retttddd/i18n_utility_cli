@@ -9,10 +9,12 @@ First, ensure you have the package installed:
 ```bash
 installing locally:
 # pip install .
+```
 
 pass the path and translate your files
 
 ```bash
 translateI18n /Path/To/DirectoryToTranslate
+```
 
 In case you have other languages change the LANG_MAP
